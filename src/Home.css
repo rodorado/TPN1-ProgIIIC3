@@ -1,0 +1,48 @@
+.grid-layout
+{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "head head"
+                         "nav nav"
+                         "cont aside"
+                         "foot foot";
+    grid-template-columns: 70% auto;
+    grid-template-rows: 20% 10% auto 5%;
+
+}
+.grid-layout >*
+{
+    margin: 5px;
+    padding: 10px;
+}
+.grid-header
+{
+    grid-area: head;
+    border: 2px dashed white;
+    display: grid;
+    place-items: center;
+}
+.grid-nav
+{
+    grid-area: nav;
+    outline: 2px dashed white;
+}
+.grid-content
+{
+    grid-area: cont;
+    outline: 2px dashed white;
+}
+.grid-aside
+{
+    grid-area: aside;
+    outline: 2px dashed white;
+}
+.grid-footer
+{
+    grid-area: foot;
+    outline: 2px dashed white;
+    display: grid;
+    place-items: center;
+}
+

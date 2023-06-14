@@ -1,0 +1,12 @@
+.card
+{
+    display: grid;
+    place-items: center;
+    padding: 5px;
+    border-bottom: dashed 2px blue;
+}
+img
+{
+    width: 150px;
+    border-radius: 50%;
+}
